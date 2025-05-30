@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="bg-blue-600 py-20">
-        <div className="container grid gap-8 md:grid-cols-2 items-center">
+<div className="container grid gap-8 grid-cols-1 md:grid-cols-2 items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-100 px-4 py-1 text-sm text-blue-900">
               <span className="font-medium">Zextras</span>
@@ -38,17 +38,16 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="relative h-[400px] rounded-lg bg-[url(https://res.cloudinary.com/dwyn5jgh3/image/upload/v1747895849/exagon_1_ph8h4c.png)] bg-cover
-           p-6 shadow-xl">
-            <Image
-              src="https://res.cloudinary.com/dwyn5jgh3/image/upload/v1746618356/Untitled_1000_x_1000_px_7_clwqhe.png?height=400&width=500"
-              alt="Digital Workplace Illustration"
-              width={500}
-              height={400}
-              className="object-contain"
-              priority
-            />
-          </div>
+        <div className="relative w-full h-[400px] rounded-lg bg-[url(https://res.cloudinary.com/dwyn5jgh3/image/upload/v1747895849/exagon_1_ph8h4c.png)] bg-cover bg-center p-6 shadow-xl md:justify-self-end">
+  <Image
+    src="https://res.cloudinary.com/dwyn5jgh3/image/upload/v1746618356/Untitled_1000_x_1000_px_7_clwqhe.png"
+    alt="Digital Workplace Illustration"
+    width={500}
+    height={400}
+    className="object-contain w-full h-full"
+    priority
+  />
+</div>
         </div>
       </section>
 
